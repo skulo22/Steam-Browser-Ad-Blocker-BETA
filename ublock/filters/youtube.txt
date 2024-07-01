@@ -1,0 +1,102 @@
+! Custom static filter list - Sushant Aggarwal
+
+!__________________________ Google & Youtube Ads __________________________
+# Zero Ads in Youtube Videos | No watermarks, Cards, Info. Nothing! Zilch! Nada!
+||youtube.com/annotations_
+youtube.com##.ytp-ce-element-show
+youtube.com##.ytp-ce-element
+youtube.com##.ytp-cards-teaser-text
+youtube.com##.ytp-cards-button-icon-default
+youtube.com##.annotation-type-text.annotation
+youtube.com##.ytp-scroll-min.ytp-pause-overlay
+youtube.com###offer-module > .ytd-watch.style-scope
+youtube.com##.annotation-type-text.annotation-popup-shape.annotation-shape
+youtube.com##.annotation-type-text.annotation-speech-shape.annotation-shape
+youtube.com##.annotation-type-text.annotation-popup-shape.annotation-shape:nth-of-type(3)
+youtube.com##.annotation-type-text.annotation-popup-shape.annotation-shape:nth-of-type(7)
+youtube.com##.annotation-type-text.annotation-popup-shape.annotation-shape:nth-of-type(5)
+youtube.com##.branding-img-container
+/endscreen.js$script,domain=www.youtube.com
+youtube.com/annotations_
+m.youtube.com##ytm-item-section-renderer.scwnr-content:nth-of-type(1) > lazy-list > .item
+youtube.com###chat
+
+# generic sponsored content eliminator
+~google.com##div.result[id*="sponsored"]
+
+
+!__________________________ Social Media Ads & Tracking __________________________
+! following 6 lines stops FB tracking activity on all websites other than FB, This Concept can be used to restrict your privacy exposure for other "ubiquitous websites" as well.
+* facebook.com * block
+* facebook.net * block
+* fbcdn.net * block
+facebook.com facebook.com * noop
+facebook.com facebook.net * noop
+facebook.com fbcdn.net * noop
+||facebook.com/ajax/mercury/change_read_status.php$xmlhttprequest
+
+!The same sort of dynamic filtering rules can be used for whatever sites for which you still would want Facebook widgets to work:
+!example.com facebook.com * noop
+!example.com facebook.net * noop
+!example.com fbcdn.net * noop
+
+!__________________________ News Ads __________________________
+!https://timesofindia.indiatimes.com/
+timesofindia.indiatimes.com##.pt0.swdgt.widget.clearfix
+timesofindia.indiatimes.com##.clearfix.fnews.widget
+timesofindia.indiatimes.com##.entrmnt-wdgt.clearfix
+timesofindia.indiatimes.com##.vid_mainplayer
+timesofindia.indiatimes.com##.vid_items-list.jVideoList
+timesofindia.indiatimes.com##.sidebar
+timesofindia.indiatimes.com##.sidebar2
+timesofindia.indiatimes.com##.jVideoList
+timesofindia.indiatimes.com##.widget.red.entertainmet-widget
+timesofindia.indiatimes.com##.lifenstyle-widget
+timesofindia.indiatimes.com###popular-widget > div:nth-child(3)
+timesofindia.indiatimes.com##.newsletterWidgetDisplay
+timesofindia.indiatimes.com##.gallery-widget.infocrtn.photos
+timesofindia.indiatimes.com##.partners-wrapper
+timesofindia.indiatimes.com###popular-widget
+timesofindia.indiatimes.com###content > div > div > div.wrapper.clearfix.article-content-wrapper > div.main-content > div:nth-child(8)
+timesofindia.indiatimes.com###content > div > div > div.wrapper.clearfix.article-content-wrapper > div.main-content > div:nth-child(9)
+timesofindia.indiatimes.com###content > div > div > div.wrapper.clearfix.article-content-wrapper > div.main-content > div:nth-child(10)
+timesofindia.indiatimes.com###content > div > div > div.wrapper.clearfix.article-content-wrapper > div.main-content > div:nth-child(11)
+www.thehindu.com##.entrySubs
+feedly.com###topHeaderBarFX
+feedreader.com##.new-post-notice
+
+
+!__________________________ Email Sites Ads __________________________
+outlook.live.com##._29KqToSCcntvfbDv_3xuuh > ._1_ag99JsBHxI6S4FP5ayPv
+outlook.live.com##._1ZEdP0-JdMOVtjBb5ZcM6M
+outlook.live.com##._2F6rWwLisyawGGg32JOcop
+outlook.live.com##._3_hHr3kfEhbNYRFM5YJxH9
+outlook.live.com##._2qPmszDwBfYpF7PO9Mn3KN
+outlook.live.com##._20YsfelFmugQWgNkXdkYaF
+outlook.live.com##._1_ag99JsBHxI6S4FP5ayPv
+outlook.live.com##._33q0KHy2ceHx9Ea1A4VXHj
+f6mail.rediff.com##.news_ads
+f6mail.rediff.com##.ad_adv_212
+
+!__________________________ Cricket Sites Ads __________________________
+www.cricbuzz.com##.cb-col-rt.cb-col-33.cb-col
+www.espncricinfo.com##.sub-module-news.sub-module
+www.espncricinfo.com##.mediaList--highlights.mediaList.no-thumb.top-highlights.sub-module
+mylivecricket.live##img
+mylivecricket.live##a
+mylivecricket.live###adcode
+
+!__________________________ Job Sites Ads __________________________
+www.hirist.com###learngrow
+www.hirist.com##.hidden-sm.hidden-xs.bannerspace.pull-left.col-xs-9-5
+www.naukri.com##.ppContainer
+www.indgovtjobs.in###g207
+
+!__________________________ Other sites Ads __________________________
+jsfiddle.net###keep-us-running
+stackblitz.com###sponsad-wrapper
+
+!__________________________ Website annoyances __________________________
+chocolatey.org###cookieNoticeAlert
+
+! Custom static filter list - Sushant Aggarwal

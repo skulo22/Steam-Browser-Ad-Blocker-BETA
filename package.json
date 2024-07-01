@@ -1,0 +1,17 @@
+{
+  "name": "steam-adblocker",
+  "version": "1.0.0",
+  "description": "Ad blocker for the Steam client web browser.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.13.1",
+    "@babel/preset-env": "^7.13.5",
+    "babel-loader": "^8.2.2",
+    "path-browserify": "^1.0.1",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  }
+}

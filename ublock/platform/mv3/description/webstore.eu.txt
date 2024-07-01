@@ -1,0 +1,30 @@
+uBO Lite (uBOL) irakargarri blokeatzailea de, baimen gutxiekin eta MV3ean basatua
+
+The default ruleset corresponds to uBlock Origin's default filterset:
+
+UblockOrigin-eko filtro lista
+ZerrendaErraza
+PribazitateaErraza
+Peter Lowe-ren Ad and tracker zerrenda
+
+Arau gehiago gehitu ditzakezu aukeren orrialdea bisitatuz. Sakatu _Cogs_ ikonoa popup panelean.
+
+uBOL is entirely declarative, meaning there is no need for a permanent uBOL process for the filtering to occur, and CSS/JS injection-based content filtering is performed reliably by the browser itself rather than by the extension. Horrek esan nahi du uBOLek berak ez duela CPU/memoria baliabiderik kontsumitzen edukien blokeoa martxan dagoen bitartean... uBOLren zerbitzuko langileen prozesua _only_ behar da popup panelarekin edo aukera orriekin elkarreragiten denean.
+
+uBOL does not require broad "read and modify data" permission at install time, hence its limited capabilities out of the box compared to uBlock Origin or other content blockers requiring broad "read and modify data" permissions at install time.
+
+However, uBOL allows you to *explicitly* grant extended permissions on specific sites of your choice so that it can better filter on those sites using cosmetic filtering and scriptlet injections.
+
+Leku jakin batean baimenak emateko, ireki panel emergentea eta aukeratu goiko iragazteko modu bat, optimo edo oso gisa.
+
+The browser will then warn you about the effects of granting the additional permissions requested by the extension on the current site, and you will have to tell the browser whether you accept or decline the request.
+
+If you accept uBOL's request for additional permissions on the current site, it will be able to better filter content for the current site.
+
+You can set the default filtering mode from uBOL's options page. If you pick the Optimal or Complete mode as the default one, you will need to grant uBOL the permission to read and modify data on all websites.
+
+Keep in mind this is still a work in progress, with these end goals:
+
+- Instalatzeko garaian, ez dago baimen zabalik. Erabiltzaileak esplizituki ematen ditu baimen zabalduak.
+
+- Entirely declarative for reliability and CPU/memory efficiency.

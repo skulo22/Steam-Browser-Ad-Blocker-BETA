@@ -10,13 +10,15 @@ This repository hosts a beta version of an ad-blocking solution tailored for the
 #### Installation
 To install Steam Browser Ad-Blocker BETA, follow these steps:
 
-1. **Download**: Clone or download this repository as a ZIP file from [skulo22/Steam-Browser-Ad-Blocker-BETA](https://github.com/skulo22/Steam-Browser-Ad-Blocker-BETA).
+1. **Close Steam**: Ensure Steam is completely closed before proceeding with installation.
 
-2. **Extract Files**: Unpack the downloaded ZIP package.
+2. **Download**: Clone or download this repository as a ZIP file from [skulo22/Steam-Browser-Ad-Blocker-BETA](https://github.com/skulo22/Steam-Browser-Ad-Blocker-BETA).
 
-3. **Run Installer**: Execute `Installer.bat`.
+3. **Extract Files**: Unpack the downloaded ZIP package.
 
-4. **Restart Steam**: Close and reopen Steam to activate the ad-blocking functionality.
+4. **Run Installer**: Execute `Installer.bat`.
+
+5. **Restart Steam**: After installation, restart Steam to activate the ad-blocking functionality.
 
 #### Usage
 Please note:
